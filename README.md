@@ -77,7 +77,7 @@ The goal was to create a visually appealing and technically optimized dashboard 
 #### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/flam-dashboard.git
+git clone https://github.com/Neha-Erigidindla/flam-dashboard.git
 ```
 
 #### 2️⃣ Navigate & Install
