@@ -45,29 +45,49 @@ The goal was to create a visually appealing and technically optimized dashboard 
 ---
 
 ### 🧩 Project Structure
-
 ```
-/flam-dashboard
+performance-dashboard/
 ├── app/
-│   ├── page.tsx
-│   ├── layout.tsx
+│   ├── dashboard/
+│   │   ├── page.tsx              # Main dashboard page
+│   │   └── layout.tsx
+│   ├── api/
+│   │   └── data/
+│   │       └── route.ts          # Data API endpoints
+│   ├── globals.css
+│   └── layout.tsx
 ├── components/
 │   ├── charts/
-│   │   ├── ScatterPlot.tsx
 │   │   ├── LineChart.tsx
-│   │   ├── Heatmap.tsx
-│   │   └── BarChart.tsx
+│   │   ├── BarChart.tsx
+│   │   ├── ScatterPlot.tsx
+│   │   └── Heatmap.tsx
 │   ├── controls/
 │   │   ├── FilterPanel.tsx
 │   │   └── TimeRangeSelector.tsx
-│   └── ui/
-│       ├── PerformanceMonitor.tsx
-│       └── ThemeToggle.tsx
+│   ├── ui/
+│   │   ├── DataTable.tsx
+│   │   └── PerformanceMonitor.tsx
+│   │   ├── PerformanceDashboardClient.tsx
+│       └── dashboardClient.tsx
+│   └── providers/
+│       └── DataProvider.tsx
 ├── hooks/
-│   └── usePerformanceMonitor.ts
-├── styles/
-│   └── globals.css
-└── package.json
+│   ├── useDataStream.ts
+│   ├── useChartRenderer.ts
+│   ├── usePerformanceMonitor.ts
+│   └── useVirtualization.ts
+├── lib/
+│   ├── dataGenerator.ts
+│   ├── performanceUtils.ts
+│   ├── canvasUtils.ts
+│   └── types.ts
+├── public/
+├── package.json
+├── next.config.js
+├── tsconfig.json
+├── README.md
+└── PERFORMANCE.md              
 ```
 
 ---
